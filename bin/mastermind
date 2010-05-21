@@ -2,6 +2,5 @@
 $LOAD_PATH.push File.join(File.dirname(__FILE__), "/../lib" )
 require 'mastermind'
 
-game = Mastermind::Game.new
-messages = game.start
-messages.each { puts message }
+game = Mastermind::Game.new(STDOUT)
+game.start
